@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Liz Mariela Cespedes Lezcano | SAP S/4HANA Public Cloud & Signavio Expert</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1A2C3E; line-height: 1.5; scroll-behavior: smooth; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 32px; }
+        .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: linear-gradient(105deg, #0B5E7E 0%, #1D7A9C 100%); color: white; font-weight: 600; padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: all 0.25s ease; border: none; cursor: pointer; font-size: 0.95rem; box-shadow: 0 4px 8px rgba(0,0,0,0.05); }
+        .btn-primary:hover { background: linear-gradient(105deg, #094c66 0%, #146b88 100%); transform: translateY(-2px); box-shadow: 0 12px 20px -8px rgba(11,94,126,0.3); }
+        .btn-outline { background: transparent; border: 1.5px solid #1D7A9C; color: #1D7A9C; font-weight: 600; padding: 10px 24px; border-radius: 40px; text-decoration: none; transition: 0.2s; display: inline-flex; align-items: center; gap: 8px; }
+        .btn-outline:hover { background: #1D7A9C; color: white; }
+        .lang-btn { background: transparent; border: 1px solid #CBDDE6; padding: 8px 16px; border-radius: 40px; font-weight: 600; cursor: pointer; transition: 0.2s; font-family: inherit; display: flex; align-items: center; gap: 6px; }
+        .lang-btn.active { background: #1D7A9C; color: white; border-color: #1D7A9C; }
+        .lang-switch { display: flex; gap: 10px; justify-content: flex-end; margin-top: 20px; }
+        .hero { padding: 40px 0 20px 0; }
+        .hero-grid { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px; }
+        .hero-content { flex: 1.4; }
+        .hero-badge { background: #EFF6F9; color: #0B5E7E; padding: 6px 14px; border-radius: 100px; font-size: 0.8rem; font-weight: 600; display: inline-block; margin-bottom: 20px; }
+        .hero-name { font-size: 3.2rem; font-weight: 800; line-height: 1.2; margin-bottom: 16px; letter-spacing: -0.02em; }
+        .hero-desc { font-size: 1.1rem; color: #2C3F55; margin: 20px 0 24px; }
+        .hero-image { flex: 1; background: #EFF3F8; border-radius: 60px; text-align: center; padding: 24px 20px; box-shadow: 0 20px 30px -15px rgba(0,0,0,0.05); }
+        .avatar-photo { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 5px solid #FFFFFF; box-shadow: 0 10px 20px rgba(0,0,0,0.1); margin: 0 auto 20px; display: block; }
+        .spec-list { display: flex; flex-wrap: wrap; gap: 14px; margin: 24px 0 20px; }
+        .spec-item { background: #F7FAFD; border-radius: 60px; padding: 8px 20px; font-weight: 500; font-size: 0.9rem; display: flex; align-items: center; gap: 10px; }
+        .contact-card { background: #FFFFFF; border-radius: 32px; box-shadow: 0 20px 35px -12px rgba(0,0,0,0.08); padding: 40px; margin: 40px 0; }
+        footer { background: #0F2A38; color: #D9E4EC; padding: 56px 0 32px; }
+        .footer-grid { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px; margin-bottom: 48px; }
+        hr { border-color: #2C5568; margin: 24px 0; }
+        a.contact-link { color: inherit; text-decoration: none; transition: color 0.2s; }
+        a.contact-link:hover { color: #1D7A9C; }
+        @media (max-width: 900px) { .hero-grid { flex-direction: column-reverse; text-align: center; } .spec-list { justify-content: center; } }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="lang-switch">
+        <button class="lang-btn active" data-lang="en"><span>🇬🇧</span> EN</button>
+        <button class="lang-btn" data-lang="es"><span>🇪🇸</span> ES</button>
+        <button class="lang-btn" data-lang="de"><span>🇩🇪</span> DE</button>
+    </div>
+</div>
+
+<main id="app">
+    <div class="container hero">
+        <div class="hero-grid">
+            <div class="hero-content">
+                <span class="hero-badge" data-i18n="hero_badge">SAP S/4HANA Public Cloud & Process Excellence</span>
+                <h1 class="hero-name">Liz Mariela Cespedes Lezcano</h1>
+                <p class="hero-desc" data-i18n="hero_desc">Freelance SAP consultant specialized in S/4HANA Public Cloud, SAP Cloud ALM, and SAP Signavio. Based in Spain, supporting projects in Germany and Switzerland.</p>
+                <div class="spec-list">
+                    <div class="spec-item"><i class="fas fa-cloud"></i> S/4HANA</div>
+                    <div class="spec-item"><i class="fas fa-chart-line"></i> Signavio</div>
+                    <div class="spec-item"><i class="fas fa-tachometer-alt"></i> Cloud ALM</div>
+                </div>
+                <div style="margin-top: 32px; display: flex; gap: 20px; flex-wrap: wrap;">
+                    <a href="#contact" class="btn-primary"><i class="fas fa-handshake"></i> <span data-i18n="cta_collab">Let's collaborate</span></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="Gemini_Generated_Image_jizjcojizjcojizj.jpg" alt="Liz Mariela Cespedes" class="avatar-photo">
+                <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="location">Spain (Travel: DE / CH)</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container">
+        <div class="contact-card" style="text-align: center;">
+            <h2 class="hero-badge" style="font-size: 1.5rem; padding: 15px 30px;" data-i18n="contact_title">Contact ML Cloud Solutions</h2>
+            <div style="margin-top: 30px; font-size: 1.2rem;">
+                <p><i class="fas fa-phone-alt" style="color:#1D7A9C;"></i> <a href="tel:+34640832388" class="contact-link">+34 640 832 388</a></p>
+                <p style="margin-top: 15px;"><i class="fas fa-envelope" style="color:#1D7A9C;"></i> <a href="mailto:mlezcano@mlcloudsolutions.com" class="contact-link">mlezcano@mlcloudsolutions.com</a></p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div>
+                <h3 style="color:white; margin-bottom: 10px;">ML Cloud Solutions</h3>
+                <p>© 2026 Liz Mariela Cespedes Lezcano</p>
+            </div>
+            <div>
+                <p><i class="fab fa-linkedin"></i> LinkedIn: /in/liz-mariela-cespedes</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    const translations = {
+        en: {
+            hero_badge: "SAP S/4HANA Public Cloud & Process Excellence",
+            hero_desc: "Freelance SAP consultant specialized in S/4HANA Public Cloud, SAP Cloud ALM, and SAP Signavio. Based in Spain, supporting projects in Germany and Switzerland.",
+            cta_collab: "Let's collaborate",
+            location: "Spain (Travel: DE / CH)",
+            contact_title: "Contact ML Cloud Solutions"
+        },
+        es: {
+            hero_badge: "SAP S/4HANA Public Cloud y Excelencia de Procesos",
+            hero_desc: "Consultora SAP freelance especializada en S/4HANA Public Cloud, SAP Cloud ALM y SAP Signavio. Con base en España, apoyando proyectos en Alemania y Suiza.",
+            cta_collab: "Colaboremos",
+            location: "España (Viajes: DE / CH)",
+            contact_title: "Contacto ML Cloud Solutions"
+        },
+        de: {
+            hero_badge: "SAP S/4HANA Public Cloud & Prozessexzellenz",
+            hero_desc: "Freiberufliche SAP-Beraterin spezialisiert auf S/4HANA Public Cloud, SAP Cloud ALM und SAP Signavio. Sitz in Spanien, Projekte in Deutschland und der Schweiz.",
+            cta_collab: "Lass uns zusammenarbeiten",
+            location: "Spanien (Reisen: DE / CH)",
+            contact_title: "Kontakt ML Cloud Solutions"
+        }
+    };
+
+    function setLanguage(lang) {
+        const t = translations[lang];
+        document.querySelectorAll("[data-i18n]").forEach(el => {
+            const key = el.getAttribute("data-i18n");
+            if (t[key]) el.innerHTML = t[key];
+        });
+        document.querySelectorAll(".lang-btn").forEach(btn => {
+            btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+        });
+    }
+
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.addEventListener("click", () => setLanguage(btn.getAttribute("data-lang")));
+    });
+</script>
+</body>
+</html>
